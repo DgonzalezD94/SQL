@@ -1,0 +1,23 @@
+CREATE TABLE Beers (ID INTEGER PRIMARY KEY, Name TEXT, ABV INTEGER, Type TEXT, 'In Stock' TEXT, IBU INTEGER);
+
+INSERT INTO Beers VALUES
+(1,'Bud Light','4.9','Lager','N','6'),
+(2, 'Coors','4.2','Lager','N','15'),
+(3,'Miller Lite','4.2','Lager','N','10'),
+(4,'Corona','4.6','Pale Lager','Y','19.3'),
+(5,'Michelob','4.7','Light Lager','Y','10'),
+(6,'Stella Artois','5.2','Pilsner','N','30'),
+(7,'Guiness Draught','5.6','Irish Dry Stout','Y','50'),
+(8,'Heineken','5','Pale Lager','Y','19'),
+(9,'Blue Moon','5.4','Belgian Style Wheat','Y','14'),
+(10,'Budweiser','5','Pale Lager','N','12'),
+(11,'Lagunitas','6.2','IPA','Y','30'),
+(12,'PABST','4.8','Bohemian Style American','Y','10'),
+(13,'Samuel Adams','17.5','Boston Lager','Y','30'),
+(14,'Dos Equis','9','Lager','Y','10'),
+(15,'Victoria','4.9','Vienna Lager','N','30');
+SELECT * FROM Beers;
+
+--Display IBU from best to worst
+SELECT IBU FROM Beers
+SORT BY DESC;
